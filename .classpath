@@ -334,6 +334,11 @@
   <classpathentry sourcepath="/home/cloudera/.ivy2/cache/javax.servlet.jsp/jsp-api/srcs/jsp-api-2.1-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/javax.servlet.jsp/jsp-api/jars/jsp-api-2.1.jar"/>
   <classpathentry sourcepath="/home/cloudera/.ivy2/cache/junit/junit/srcs/junit-3.8.1-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/junit/junit/jars/junit-3.8.1.jar"/>
   <classpathentry sourcepath="/home/cloudera/.ivy2/cache/javax.servlet/servlet-api/srcs/servlet-api-2.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/javax.servlet/servlet-api/jars/servlet-api-2.5.jar"/>
+  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.json/json/srcs/json-20180813-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.json/json/bundles/json-20180813.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.json/json/docs/json-20180813-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
   <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-3.0.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-3.0.5.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.scalatest/scalatest_2.11/docs/scalatest_2.11-3.0.5-javadoc.jar!/"/>

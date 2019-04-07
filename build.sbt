@@ -10,7 +10,8 @@ lazy val root = (project in file("."))
     name := "GetExchangeRate",
     libraryDependencies += scalaTest % Test,
     libraryDependencies += httpComponents,
-    libraryDependencies += hadoopClient
+    libraryDependencies += hadoopClient,
+    libraryDependencies += json
   )
 
 // Uncomment the following for publishing to Sonatype.
