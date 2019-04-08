@@ -69,9 +69,11 @@ object Hello extends Greeting with App {
   
   private def cleanseJson(result: String): String = {
     val json = (new JSONObject(result)).getJSONObject("Realtime Currency Exchange Rate");
-    val xrate = json.getDouble("5. Exchange Rate")
+//    val xrate = json.getDouble("5. Exchange Rate")
     //{"Currency":"EUR_USD","ExchangeRate":"1.12183","RefreshedTime":"2019-04-07 16:59:56"}
-    val convertedResult = f"""{\"Currency\":\"${fromCurrency}_${toCurrency}\",\"ExchangeRate\":\"$xrate%.5f\",\"RefreshedTime\":\"${json.get("6. Last Refreshed")}\"}"""
+    //val convertedResult = f"""{\"Currency\":\"${fromCurrency}_${toCurrency}\",\"ExchangeRate\":\"$xrate%.5f\",\"RefreshedTime\":\"${json.get("6. Last Refreshed")}\"}"""
+    //EUR_USD,1.1218300,2019-04-07 16:59:56
+    val convertedResult = s"${fromCurrency}_${toCurrency},${json.get("5. Exchange Rate")},${json.get("6. Last Refreshed")}"
     println(convertedResult)
     convertedResult
   }
