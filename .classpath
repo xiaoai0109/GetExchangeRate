@@ -2,31 +2,6 @@
   <classpathentry kind="src" path="src/main/scala"/>
   <classpathentry kind="src" path="src/test/scala"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/fluent-hc/srcs/fluent-hc-4.5.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/fluent-hc/jars/fluent-hc-4.5.5.jar">
-    <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.apache.httpcomponents/fluent-hc/docs/fluent-hc-4.5.5-javadoc.jar!/"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.5.jar">
-    <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpclient/docs/httpclient-4.5.5-javadoc.jar!/"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.9-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.9.jar">
-    <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpcore/docs/httpcore-4.4.9-javadoc.jar!/"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.2-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar">
-    <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/commons-logging/commons-logging/docs/commons-logging-1.2-javadoc.jar!/"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar">
-    <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/commons-codec/commons-codec/docs/commons-codec-1.10-javadoc.jar!/"/>
-    </attributes>
-  </classpathentry>
   <classpathentry kind="lib" path="/home/cloudera/.ivy2/cache/org.apache.hadoop/hadoop-client/jars/hadoop-client-2.7.0.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.apache.hadoop/hadoop-client/docs/hadoop-client-2.7.0-javadoc.jar!/"/>
@@ -334,24 +309,29 @@
   <classpathentry sourcepath="/home/cloudera/.ivy2/cache/javax.servlet.jsp/jsp-api/srcs/jsp-api-2.1-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/javax.servlet.jsp/jsp-api/jars/jsp-api-2.1.jar"/>
   <classpathentry sourcepath="/home/cloudera/.ivy2/cache/junit/junit/srcs/junit-3.8.1-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/junit/junit/jars/junit-3.8.1.jar"/>
   <classpathentry sourcepath="/home/cloudera/.ivy2/cache/javax.servlet/servlet-api/srcs/servlet-api-2.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/javax.servlet/servlet-api/jars/servlet-api-2.5.jar"/>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.json/json/srcs/json-20180813-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.json/json/bundles/json-20180813.jar">
+  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/fluent-hc/srcs/fluent-hc-4.5.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/fluent-hc/jars/fluent-hc-4.5.5.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.json/json/docs/json-20180813-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.apache.httpcomponents/fluent-hc/docs/fluent-hc-4.5.5-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-3.0.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-3.0.5.jar">
+  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.5.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.scalatest/scalatest_2.11/docs/scalatest_2.11-3.0.5-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpclient/docs/httpclient-4.5.5-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.scalactic/scalactic_2.11/srcs/scalactic_2.11-3.0.5-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.scalactic/scalactic_2.11/bundles/scalactic_2.11-3.0.5.jar">
+  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.9-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.9.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.scalactic/scalactic_2.11/docs/scalactic_2.11-3.0.5-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.apache.httpcomponents/httpcore/docs/httpcore-4.4.9-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.6-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.6.jar">
+  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.2-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/docs/scala-xml_2.11-1.0.6-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/commons-logging/commons-logging/docs/commons-logging-1.2-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/home/cloudera/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar" kind="lib" path="/home/cloudera/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/home/cloudera/.ivy2/cache/commons-codec/commons-codec/docs/commons-codec-1.10-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
