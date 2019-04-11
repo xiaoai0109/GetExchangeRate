@@ -37,7 +37,10 @@ object Hello extends Greeting with App {
     val result = api.getData(fromCurrency, toCurrency)
     println(result)
     if (!result.isEmpty()) {
-      val result2 = cleanseJson(result)
+      val result2 = result.replaceAll("\\s", "");
+      println(result2)
+      //{"RealtimeCurrencyExchangeRate":{"1.From_CurrencyCode":"EUR","2.From_CurrencyName":"Euro","3.To_CurrencyCode":"USD","4.To_CurrencyName":"UnitedStatesDollar","5.ExchangeRate":"1.12765000","6.LastRefreshed":"2019-04-1016:34:02","7.TimeZone":"UTC"}}
+//      val result2 = cleanseJson(result)
       writeToSocket(result2)      
 //      writeToHDFS(result, dt)
 
