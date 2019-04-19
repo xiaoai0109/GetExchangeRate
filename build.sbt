@@ -10,6 +10,7 @@ lazy val root = (project in file("."))
     name := "GetExchangeRate",
     libraryDependencies += hadoopClient,
     libraryDependencies += httpComponents,
+    libraryDependencies += json
   )
 
 assemblyMergeStrategy in assembly := {
