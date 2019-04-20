@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat
 import scala.util.Random
 
 object Hello extends Greeting with App {
-  println(greeting)
+  //  println(greeting)
 
   val fromCurrency = "EUR"
   val toCurrency = "USD"
@@ -23,30 +23,23 @@ object Hello extends Greeting with App {
 
   val api = new Api()
 
-  while (true) {
+  val dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+  val key = dateFormatter.format(new Date())
 
-    val dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-    val key = dateFormatter.format(new Date())
-
-    // mock up data
-    val xrate =  Random.nextFloat() /1000 
-    val convertedResult = f"""{\"datetime\":\"$key\",\"xrate\":${1.12460640 +xrate}%.8f}"""
+  // mock up data
+    val xrate = Random.nextFloat() / 1000
+    val convertedResult = f"""{\"datetime\":\"$key\",\"xrate\":${1.12460640 + xrate}%.8f}"""
     println(convertedResult)
     writeToSocket(convertedResult)
 
-    // Fetch real data from api
-//    val result = api.getData(fromCurrency, toCurrency)
-//    if (!result.isEmpty()) {
-////      println(result)
-//      val json = (new JSONObject(result)).getJSONObject("Realtime Currency Exchange Rate");
-//      val convertedResult = f"""{\"datetime\":\"${json.get("6. Last Refreshed")}\",\"xrate\":\"${json.get("5. Exchange Rate")}\"}"""
-//      println(convertedResult)
-//      writeToSocket(convertedResult)
-//    }
-    
-    //    Thread.sleep(60000)
-    Thread.sleep(20000)
-  }
+  // Fetch real-time data from api
+//  val result = api.getData(fromCurrency, toCurrency)
+//  if (!result.isEmpty()) {
+//    val json = (new JSONObject(result)).getJSONObject("Realtime Currency Exchange Rate");
+//    val convertedResult = f"""{\"datetime\":\"${json.get("6. Last Refreshed")}\",\"xrate\":\"${json.get("5. Exchange Rate")}\"}"""
+//    println(convertedResult)
+//    writeToSocket(convertedResult)
+//  }
 
   private def writeToSocket(result: String) {
     try {
@@ -56,12 +49,11 @@ object Hello extends Greeting with App {
 
       out.println(result)
       out.flush()
-      println("Received: " + in.next())
+      //      println("Received: " + in.next())
       s.close()
     } catch {
       case _: Throwable => println("Cannot send to localhost:9999")
     }
-
   }
 }
 
