@@ -25,8 +25,9 @@ object Hello extends Greeting with App {
 
   while (true) {
 
-    val dateFormatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")
+    val dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
     val key = dateFormatter.format(new Date())
+
     val xrate =  Random.nextFloat() /1000 
     println(xrate.toString)
     val convertedResult = f"""{\"datetime\":\"$key\",\"xrate\":${1.12460640 +xrate}%.8f}"""
