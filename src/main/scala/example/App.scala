@@ -23,23 +23,26 @@ object Hello extends Greeting with App {
 
   val api = new Api()
 
-  val dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-  val key = dateFormatter.format(new Date())
+  while (true) {
+    val dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+    val key = dateFormatter.format(new Date())
 
-  // mock up data
+    // mock up data
     val xrate = Random.nextFloat() / 1000
     val convertedResult = f"""{\"datetime\":\"$key\",\"xrate\":${1.12460640 + xrate}%.8f}"""
     println(convertedResult)
     writeToSocket(convertedResult)
 
-  // Fetch real-time data from api
-//  val result = api.getData(fromCurrency, toCurrency)
-//  if (!result.isEmpty()) {
-//    val json = (new JSONObject(result)).getJSONObject("Realtime Currency Exchange Rate");
-//    val convertedResult = f"""{\"datetime\":\"${json.get("6. Last Refreshed")}\",\"xrate\":\"${json.get("5. Exchange Rate")}\"}"""
-//    println(convertedResult)
-//    writeToSocket(convertedResult)
-//  }
+    // Fetch real-time data from api
+//      val result = api.getData(fromCurrency, toCurrency)
+//      if (!result.isEmpty()) {
+//        val json = (new JSONObject(result)).getJSONObject("Realtime Currency Exchange Rate");
+//        val convertedResult = f"""{\"datetime\":\"${json.get("6. Last Refreshed")}\",\"xrate\":\"${json.get("5. Exchange Rate")}\"}"""
+//        println(convertedResult)
+//        writeToSocket(convertedResult)
+//      }
+    Thread.sleep(60000)
+  }
 
   private def writeToSocket(result: String) {
     try {
