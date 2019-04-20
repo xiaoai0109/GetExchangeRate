@@ -7,7 +7,8 @@ import scala.util.Failure
 
 class Api {
   private val baseUri = "https://www.alphavantage.co/query"
-  private val key = "YOGEYZ72NCX11UPI"
+//  private val key = "YOGEYZ72NCX11UPI"
+  private val key = "SW4MQ605LBYKUT4O"
   private val function = "CURRENCY_EXCHANGE_RATE"
   
   private def httpRequest(fromCurrency: String, toCurrency: String): Try[String] = Try(

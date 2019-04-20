@@ -7,6 +7,9 @@ import java.net._
 import java.io._
 import scala.io._
 import org.json.JSONObject;
+import java.util.{ Calendar, Date }
+import java.text.SimpleDateFormat
+import scala.util.Random
 
 object Hello extends Greeting with App {
   println(greeting)
@@ -21,6 +24,16 @@ object Hello extends Greeting with App {
   val api = new Api()
 
   while (true) {
+
+    val dateFormatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")
+    val key = dateFormatter.format(new Date())
+    val xrate =  Random.nextFloat() /1000 
+    println(xrate.toString)
+    val convertedResult = f"""{\"datetime\":\"$key\",\"xrate\":${1.12460640 +xrate}%.8f}"""
+    println(convertedResult)
+    writeToSocket(convertedResult)
+
+    /*
     val result = api.getData(fromCurrency, toCurrency)
     if (!result.isEmpty()) {
       /*
@@ -31,14 +44,17 @@ object Hello extends Greeting with App {
       //{"RealtimeCurrencyExchangeRate":{"1.From_CurrencyCode":"EUR","2.From_CurrencyName":"Euro","3.To_CurrencyCode":"USD","4.To_CurrencyName":"UnitedStatesDollar","5.ExchangeRate":"1.12765000","6.LastRefreshed":"2019-04-1016:34:02","7.TimeZone":"UTC"}}
       writeToSocket(result2)
 */
+      println(result)
       val json = (new JSONObject(result)).getJSONObject("Realtime Currency Exchange Rate");
       //      val convertedResult = s"${fromCurrency}_${toCurrency},${json.get("5. Exchange Rate")},${json.get("6. Last Refreshed")}"
 //      val result2 = s"${json.get("6. Last Refreshed")},${json.get("5. Exchange Rate")}"
       val convertedResult = f"""{\"datetime\":\"${json.get("6. Last Refreshed")}\",\"xrate\":\"${json.get("5. Exchange Rate")}\"}"""
+
       println(convertedResult)
       writeToSocket(convertedResult)
 
     }
+    */
     //    Thread.sleep(60000)
     Thread.sleep(20000)
   }
